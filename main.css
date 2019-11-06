@@ -1,0 +1,167 @@
+:root{
+    --main: #ee5b91;
+    --secondary: #351c4d;
+}
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/**/
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(var(--main), #c03568);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.intro-container{
+    margin-right: 10rem;
+    width: 90%;
+    line-height: 2.5rem;
+}
+.intro-container h2{
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+    font-size: 2rem;
+}
+.intro-heavy{
+    font-size: 2.5rem;
+    color: var(--secondary);
+}
+.colorize,.colorize2{
+    transition: color .4s ease;
+    cursor: pointer;
+}
+.colorize:hover{
+    color: #fff
+}
+.colorize2:hover{
+    color: var(--secondary)
+}
+
+
+/****************************************/
+
+.more-active{
+    position: absolute;
+    right:0;
+    bottom:10rem;
+    background-color: var(--secondary);
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+    width: 7rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+.less-active{
+    position: absolute;
+    left:0;
+    top:10rem;
+    background-color: var(--main);
+    /* box-shadow: 0px 0px 9px rgb(0, 0, 0); */
+    width: 7rem;
+    height: 3.5rem;
+    cursor: pointer;
+}
+.more{
+    left:100vw;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: var(--secondary);
+    /* box-shadow: 0px 0px 4px black; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    transition: left 1s ease-in-out;
+}
+.more-actived{
+    left:0;
+}
+.abilities{
+    font-size: 4rem;
+    font-family: 'Ubuntu Mono', monospace;
+    margin-bottom: 4rem;
+    color: var(--main);
+}
+.more ul > *{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Share Tech Mono', monospace;
+    transition: color .5s ease;
+    cursor: pointer;
+}
+.more ul > *:hover{
+    color: var(--main)
+}
+.special-ability{
+    color: var(--main)!important
+}
+
+
+/******************/
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    width:100vw;
+    height: 10vh;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+footer > *{
+    color:white;
+    display: flex;
+    letter-spacing: .3rem;
+    padding: .5rem;
+}
+footer i{
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-shadow: 0px 0px 6px var(--secondary)
+}
+footer p{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.5rem;
+}
+
+
+/*************************************/
+
+
+@media only screen and (min-width: 480px){
+    .intro-container{
+        margin-right: 30rem;
+        width:50%;
+        padding: 5rem 0;
+        border-right: 2px solid var(--secondary)
+    }
+}
+@media only screen and (min-width: 1200px){
+    .intro-container{
+        margin-right: 100rem;
+        width:25%;
+        padding: 5rem 0;
+        border-right: 2px solid var(--secondary)
+    }
+}
