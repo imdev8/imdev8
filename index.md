@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono|Ubuntu+Mono:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>IMD</title>
 </head>
 <body>
     
     <div class="intro">
         <div class="intro-container">
-            <h2><span class="intro-heavy">Hey I'm <span class="colorize">IMD</span>,</span><br>a junior web <span class="colorize2">designer</span> :&#41</h2>
+            <h2><span class="intro-heavy">Hey I'm <span class="colorize">IMD</span>,</span><br>a junior web <span class="colorize2">designer</span> :)</h2>
         </div>
     </div>
 
@@ -30,7 +29,7 @@
             <li>CSS</li>
             <li>SASS</li>
             <li>React</li>
-            <li>Little JS ;&#41</li>
+            <li>Little JS ;)</li>
             <li class="special-ability">And improving...</li>
         </ul>
         
